@@ -1,0 +1,23 @@
+.LoginPage{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+.signUp{
+    display: flex;
+    justify-content: center;
+}
+.signUp>a{
+    text-decoration: none;
+    color: brown;
+}
+.errorMessage ,#errorMessage1 , #errorMessage2 , #errorPwd{
+    color: red;
+}
+form{
+    border: 1px solid #3f51b5;
+}
+button{
+    width: -webkit-fill-available;
+}
