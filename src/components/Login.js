@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import Button from '@material-ui/core/Button';
-import {Link} from 'react-router-dom';
+import {Link , Redirect} from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +41,11 @@ const Login = () => {
               email,
               pwd
           }
+          if(email == "test@test.com" && pwd == "123456"){
+            window.location.href = '/counter';
+          }else{
+            document.getElementById('errorbtn').innerText = "Invalid user/password"
+          }
           console.log(inputData);
       }
   }
@@ -48,6 +53,7 @@ const Login = () => {
         <>
         <div className="LoginPage">
        <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit}>
+         <img src=" https://static3.depositphotos.com/1005574/224/v/950/depositphotos_2240334-stock-illustration-login-icon-button.jpg" style={{height:"100px"}} />
         <div className={classes.margin}>
           <Grid container spacing={1} alignItems="flex-end">
             <Grid item>
@@ -74,6 +80,7 @@ const Login = () => {
         <Button type="submit" variant="contained" color="primary">
         Login
       </Button>
+      <span id="errorbtn"></span>
         </div>
         </form>
 

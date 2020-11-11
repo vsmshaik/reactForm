@@ -54,6 +54,7 @@ const Signup = () => {
         <>
         <div className="LoginPage">
        <form className={classes.root} noValidate autoComplete="off" onSubmit={signUpSubmit}>
+         <img src="https://freepngimg.com/thumb/web_design/24790-3-sign-up-button.png" alt="signUp" style={{height:"100px"}} />
         <div className={classes.margin}>
           <Grid container spacing={1} alignItems="flex-end">
             <Grid item>
@@ -98,6 +99,7 @@ const Signup = () => {
         <p className="signUp">Already have an account?<Link to="/">Login</Link></p>
         </>
     )
+    
 }
 
 export default Signup
