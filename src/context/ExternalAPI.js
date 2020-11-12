@@ -15,10 +15,7 @@ const ExternalAPI = () => {
             });
         })
     },[]);
-
     console.log(users);
-
-
     const columns = [
         {
          name: "name",
@@ -67,11 +64,9 @@ const ExternalAPI = () => {
     
 
     return (
-       
         <Auxilary>
         	 <MUIDataTable title={"JSON PlaceHolder"} columns={columns} data={users} options={options}/>
         </Auxilary>
-        
     )
 }
 
