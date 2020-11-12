@@ -8,13 +8,13 @@ import CounterOutput from '../components/CounterOutput/TestItr';
 const Counter = (props) => {
 	return (
 		<div>
-			<CounterControl label="API" clicked={() => props.test()} />
+			<CounterControl label="JSON API" clicked={() => props.test()} />
 			<CounterOutput value={props.ctr} />
 			{/* <CounterControl label="Increment" clicked={() =>props.onIncrementCounter()} />
         <CounterControl label="Decrement" clicked={() => props.onDecrementCounter()}  /> */}
 			{/* <CounterControl label="Add 5" clicked={() => props.onADD()}  />
         <CounterControl label="Subtract 5" clicked={() => props.onSUB()}  /> */}
-        
+
 		</div>
 	);
 };

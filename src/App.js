@@ -14,20 +14,19 @@ import  Tables  from '@material-ui/core/Table';
 import EnhancedTable from './components/EnhancedTable';
 import Dummy from './components/Dummy';
 import Counter from './components/Counter';
+import ExternalAPI from './context/ExternalAPI';
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Login} />
         <Route exact path="/signUp" component={Signup} />
-        <Route exact path="/card" component={Card} />
         <Route exact path="/users" component={Testfile} />
-        <Route exact path="/users/:id" component={More} />
         <Route exact path="/table" component={CustomizedTables} />
-        <Route exact path="/testtables" component={Tables} />
-        <Route exact path="/enhancetables" component={EnhancedTable} />
         <Route exact path="/tables" component={Dummy} />
         <Route exact path="/counter" component={Counter} />
+        <Route exact path="/extApi" component={ExternalAPI} />
       </Switch>
     </Router>
   );
