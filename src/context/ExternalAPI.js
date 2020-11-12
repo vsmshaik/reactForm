@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import {useDataLayerValue } from './DataLayer';
 import Axios from 'axios';
 import Auxilary from './../hoc/Auxilary';
-import withClass from './../hoc/withClass';
 import MUIDataTable from "mui-datatables";
 
 const ExternalAPI = () => {
